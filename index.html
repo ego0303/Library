@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <div class="header">
+        <div class="logo">My Library Ego</div>
+        <dialog id="showdialog">
+            <form>
+                <fieldset>
+                    <legend>ADD NEW BOOK</legend>
+                    <label for="name">Name</label>
+                    <input id="name" type="text" name="Book">
+                    <label for="author">Author</label>
+                    <input id="author" type="text" name="Author">
+                    <label for="page">Page</label>
+                    <input id="page" type="number" name="Pages">
+                    <label id="choose">Status
+                        <select id="status">
+                            <option>Read</option>
+                            <option>Unread</option>
+                        </select>
+                    </label>
+                </fieldset>
+                <div id="process">
+                    <button id="cancel" type="button" formmethod="dialog">Cancel</button>
+                    <button id="confirm" type="submit">Confirm</button>
+                </div>
+            </form>
+        </dialog>
+        <button id="addbook">+</button>
+    </div>
+    <div class="main">
+        <table>
+            <thead>
+                <tr>
+                    <th>Name Book</th>
+                    <th>Author</th>
+                    <th>Pages</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id="booklist"> 
+                
+            </tbody>
+        </table>
+    </div>
+    <div class="footer"></div>
+    <script src="./main.js"></script>
+</body>
+</html>
